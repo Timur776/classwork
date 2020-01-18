@@ -6,7 +6,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            float n = float.Parse(Console.ReadLine());
+            Console.WriteLine(n * 0.17);
         }
     }
 }
