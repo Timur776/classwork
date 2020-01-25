@@ -7,11 +7,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int a, b, c;
-            a = int.Parse(Console.ReadLine());
-            b = int.Parse(Console.ReadLine());
-            c = int.Parse(Console.ReadLine());
-            Console.WriteLine(a + b + c);
+            double R = double.Parse(Console.ReadLine());
+            Console.WriteLine("Площадь "+(Math.PI * (R * R)));
+            Console.WriteLine("Периметор "+(Math.PI * R * 2));
         }
     }
 }
