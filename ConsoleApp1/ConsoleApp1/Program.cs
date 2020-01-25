@@ -7,9 +7,23 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            double R = double.Parse(Console.ReadLine());
-            Console.WriteLine("Площадь "+(Math.PI * (R * R)));
-            Console.WriteLine("Периметор "+(Math.PI * R * 2));
+            string name, address, phone, fax, website, managerName, managerSurneme, managerPhone;
+            name = Console.ReadLine();
+            address = Console.ReadLine();
+            phone = Console.ReadLine();
+            fax = Console.ReadLine();
+            website = Console.ReadLine();
+            managerName = Console.ReadLine();
+            managerSurneme = Console.ReadLine();
+            managerPhone = Console.ReadLine();
+            Console.WriteLine("имя компании "+(name));
+            Console.WriteLine("адрес "+(address));
+            Console.WriteLine("телефон "+(phone));
+            Console.WriteLine("факс "+(fax));
+            Console.WriteLine("сайт "+(website));
+            Console.WriteLine("имя менеджера "+(managerName));
+            Console.WriteLine("фамилия менеджера "+(managerSurneme));
+            Console.WriteLine("телефон менеджера " + (managerPhone));
         }
     }
 }
