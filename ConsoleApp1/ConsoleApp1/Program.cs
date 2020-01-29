@@ -7,23 +7,23 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string name, address, phone, fax, website, managerName, managerSurneme, managerPhone;
-            name = Console.ReadLine();
-            address = Console.ReadLine();
-            phone = Console.ReadLine();
-            fax = Console.ReadLine();
-            website = Console.ReadLine();
-            managerName = Console.ReadLine();
-            managerSurneme = Console.ReadLine();
-            managerPhone = Console.ReadLine();
-            Console.WriteLine("имя компании "+(name));
-            Console.WriteLine("адрес "+(address));
-            Console.WriteLine("телефон "+(phone));
-            Console.WriteLine("факс "+(fax));
-            Console.WriteLine("сайт "+(website));
-            Console.WriteLine("имя менеджера "+(managerName));
-            Console.WriteLine("фамилия менеджера "+(managerSurneme));
-            Console.WriteLine("телефон менеджера " + (managerPhone));
+            int n = int.Parse(Console.ReadLine());
+            int a = n % 10;
+            int b = (n / 10) % 10;
+            int c = (n / 100) % 10;
+            int d = (n / 1000) % 10;
+            if (n < 10000 && n > 999)
+            {
+                Console.WriteLine(a + b + c + d);
+                Console.WriteLine($"{d}{c}{b}{a}");
+                Console.WriteLine($"{d}{a}{c}{b}");
+                Console.WriteLine($"{a}{c}{b}{d}");
+            }
+            else 
+            {
+                Console.WriteLine("потрачено");
+            } 
+
         }
     }
 }
