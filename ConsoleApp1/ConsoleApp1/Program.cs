@@ -7,14 +7,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int c = int.Parse(Console.ReadLine());
-            int v = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
             int m = int.Parse(Console.ReadLine());
-            Console.WriteLine(n+m+b+v+c);
-
-
+            int n = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int v = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            Console.WriteLine(Math.Max(c, Math.Max(v, Math.Max(b, Math.Max(m, n)))));
         }
     }
 }
