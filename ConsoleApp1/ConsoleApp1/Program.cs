@@ -7,11 +7,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int n =
-            int.Parse(Console.ReadLine());
-            int m =
-            int.Parse(Console.ReadLine());
-            Console.WriteLine(Enumerable.Range(n+1, m-n-1).Select(x => x%5).Where(x => x==0).Count());
+            int n = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            int v = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int m = int.Parse(Console.ReadLine());
+            Console.WriteLine(n+m+b+v+c);
+
 
         }
     }
