@@ -7,13 +7,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int S = 0;
-            int n = int.Parse(Console.ReadLine());
-            for (int i = 0; i < n; i++)
+            int n = 90;
+            ulong  a = 1;
+            ulong b = 1;
+            for (int i = 0; i < n; i++) 
             {
-                S+= int.Parse(Console.ReadLine());
+
+                ulong  c = a + b;
+                a = b;
+                b = c;
+                Console.WriteLine(c);
             }
-            Console.WriteLine(S);
+          
         }
     }
 }
