@@ -7,18 +7,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int n = 90;
-            ulong  a = 1;
-            ulong b = 1;
-            for (int i = 0; i < n; i++) 
+            int n = 10;
+            double S = 1;
+            for (int i = 2; ; i++)
             {
-
-                ulong  c = a + b;
-                a = b;
-                b = c;
-                Console.WriteLine(c);
+                double k = 1.0 / i * Math.Pow(-1, i);
+                if (Math.Abs(k) < 0.001)
+                {
+                    break;
+                }
+                else
+                {
+                    S += k;
+                }
             }
-          
+            Console.WriteLine(S);
         }
     }
 }
