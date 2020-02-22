@@ -7,16 +7,61 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int m = int.Parse(Console.ReadLine());
-                if (n > m)
+            double n = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double m = double.Parse(Console.ReadLine());
+            if (n>0) 
+            {
+                if (b>0)
                 {
-                n += m;
-                m = n - m;
-                n -= m;
+                    if (m > 0)
+                    {
+                        Console.WriteLine("+");
+                    }
+                    else 
+                    {
+                        Console.WriteLine("-");
+                    }
                 }
-            Console.WriteLine(n);
-            Console.WriteLine(m);
+                else
+                {
+                    if (m > 0)
+                    {
+                        Console.WriteLine("-");
+                    }
+                    else
+                    {
+                        Console.WriteLine("+");
+                    }
+                }
+            }
+            else
+            {
+                if (b > 0)
+                {
+                    if (m > 0)
+                    {
+                        Console.WriteLine("-");
+                    }
+                    else
+                    {
+                        Console.WriteLine("+");
+                    }
+                }
+                else
+                {
+                    if (m > 0)
+                    {
+                        Console.WriteLine("+");
+                    }
+                    else
+                    {
+                        Console.WriteLine("-");
+                    }
+                }
+            }
+                
+            
         }
     }
 }
