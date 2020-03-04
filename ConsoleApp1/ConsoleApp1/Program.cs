@@ -7,42 +7,27 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            switch (n)
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+            double D = b * b - 4 * a * c;
+            if(D>0)
             {
-                case 0:
-                    Console.WriteLine("zero");
-                    break;
-
-                case 1:
-                    Console.WriteLine("one");
-                    break;
-                case 2:
-                    Console.WriteLine("two");
-                    break;
-                case 3:
-                    Console.WriteLine("three");
-                    break;
-                case 4:
-                    Console.WriteLine("four");
-                    break;
-                case 5:
-                    Console.WriteLine("five");
-                    break;
-                case 6:
-                    Console.WriteLine("six");
-                    break;
-                case 7:
-                    Console.WriteLine("seven");
-                    break;
-                case 8:
-                    Console.WriteLine("Eight");
-                    break;
-                case 9:
-                    Console.WriteLine("nine");
-                    break;
-                default:
-                    break;
+                double x1 = (-b + Math.Sqrt(D))/(2*a);
+                double x2 = (-b - Math.Sqrt(D))/(2*a);
+                Console.WriteLine($"{x1} {x2}");
+            }
+            else
+            {
+                if (D < 0)
+                {
+                    Console.WriteLine("решения нету");
+                }
+                else
+                {
+                    double x =-b/(2*a);
+                    Console.WriteLine(x);
+                }
             }
         }
 
