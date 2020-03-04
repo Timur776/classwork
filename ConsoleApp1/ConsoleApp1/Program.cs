@@ -7,29 +7,118 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            double a = double.Parse(Console.ReadLine());
-            double b = double.Parse(Console.ReadLine());
-            double c = double.Parse(Console.ReadLine());
-            double D = b * b - 4 * a * c;
-            if(D>0)
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            int d = int.Parse(Console.ReadLine());
+            int e = int.Parse(Console.ReadLine());
+            if (a > b)
             {
-                double x1 = (-b + Math.Sqrt(D))/(2*a);
-                double x2 = (-b - Math.Sqrt(D))/(2*a);
-                Console.WriteLine($"{x1} {x2}");
-            }
-            else
-            {
-                if (D < 0)
+                if (a > c)
                 {
-                    Console.WriteLine("решения нету");
+                    if(a>d)
+                    {
+                        if (a > e)
+                        {
+                            Console.WriteLine(a);
+                        }
+                        else
+                        {
+                            Console.WriteLine(e);
+                        }
+                    }
+                    else
+                    {
+                        if (d > e)
+                        {
+                            Console.WriteLine(d);
+                        }
+                        else
+                        {
+                            Console.WriteLine(e);
+                        }
+                    }
                 }
                 else
                 {
-                    double x =-b/(2*a);
-                    Console.WriteLine(x);
+                    if(c>d)
+                    {
+                        if (c > e)
+                        {
+                            Console.WriteLine(c);
+                        }
+                        else
+                        {
+                            Console.WriteLine(e);
+                        }
+                    }                  
+                    else
+                    {
+                        if (d > e)
+                        {
+                            Console.WriteLine(d);
+                        }
+                        else
+                        {
+                            Console.WriteLine(e);
+                        }
+                    }
+                }
+
+            }
+            else
+            {
+                if (b > c)
+                {
+                    if (b > d)
+                    {
+                        if (b > e)
+                        {
+                            Console.WriteLine(b);
+                        }
+                        else
+                        {
+                            Console.WriteLine(e);
+                        }
+                    }
+                    else
+                    {
+                        if (d > e)
+                        {
+                            Console.WriteLine(d);
+                        }
+                        else
+                        {
+                            Console.WriteLine(e);
+                        }
+                    }
+                }
+                else
+                {
+                    if (c > d)
+                    {
+                        if (c > e)
+                        {
+                            Console.WriteLine(c);
+                        }
+                        else
+                        {
+                            Console.WriteLine(e);
+                        }
+                    }
+                    else
+                    {
+                        if (d > e)
+                        {
+                            Console.WriteLine(d);
+                        }
+                        else
+                        {
+                            Console.WriteLine(e);
+                        }
+                    }
                 }
             }
         }
-
     }
 }
