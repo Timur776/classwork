@@ -7,118 +7,28 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
-            int c = int.Parse(Console.ReadLine());
-            int d = int.Parse(Console.ReadLine());
-            int e = int.Parse(Console.ReadLine());
-            if (a > b)
+            int n = int.Parse(Console.ReadLine());
+            switch (n)
             {
-                if (a > c)
-                {
-                    if(a>d)
-                    {
-                        if (a > e)
-                        {
-                            Console.WriteLine(a);
-                        }
-                        else
-                        {
-                            Console.WriteLine(e);
-                        }
-                    }
-                    else
-                    {
-                        if (d > e)
-                        {
-                            Console.WriteLine(d);
-                        }
-                        else
-                        {
-                            Console.WriteLine(e);
-                        }
-                    }
-                }
-                else
-                {
-                    if(c>d)
-                    {
-                        if (c > e)
-                        {
-                            Console.WriteLine(c);
-                        }
-                        else
-                        {
-                            Console.WriteLine(e);
-                        }
-                    }                  
-                    else
-                    {
-                        if (d > e)
-                        {
-                            Console.WriteLine(d);
-                        }
-                        else
-                        {
-                            Console.WriteLine(e);
-                        }
-                    }
-                }
-
+                case 1:
+                case 2:
+                case 3:
+                    Console.WriteLine(n * 10);
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                    Console.WriteLine(n * 100);
+                    break;
+                case 7:
+                case 8:
+                case 9:
+                    Console.WriteLine(n * 1000);
+                    break;
+                default:
+                    Console.WriteLine("error");
+                    break;
             }
-            else
-            {
-                if (b > c)
-                {
-                    if (b > d)
-                    {
-                        if (b > e)
-                        {
-                            Console.WriteLine(b);
-                        }
-                        else
-                        {
-                            Console.WriteLine(e);
-                        }
-                    }
-                    else
-                    {
-                        if (d > e)
-                        {
-                            Console.WriteLine(d);
-                        }
-                        else
-                        {
-                            Console.WriteLine(e);
-                        }
-                    }
-                }
-                else
-                {
-                    if (c > d)
-                    {
-                        if (c > e)
-                        {
-                            Console.WriteLine(c);
-                        }
-                        else
-                        {
-                            Console.WriteLine(e);
-                        }
-                    }
-                    else
-                    {
-                        if (d > e)
-                        {
-                            Console.WriteLine(d);
-                        }
-                        else
-                        {
-                            Console.WriteLine(e);
-                        }
-                    }
-                }
-            }
-        }
+        } 
     }
 }
