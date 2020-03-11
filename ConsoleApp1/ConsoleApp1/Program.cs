@@ -7,13 +7,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            long S = 0;
-            int n =int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine());
+            long min = Int64.MaxValue;
+            long max = Int64.MinValue;
             for (int i = 0; i < n; i++)
             {
-                S += i + 1;
+                long v =long.Parse(Console.ReadLine());
+                max = Math.Max(v, max);
+                min = Math.Min(v, min);
             }
-            Console.WriteLine(S);
+            Console.WriteLine($"Max: {max}");
+            Console.WriteLine($"Min {min}");
         } 
     }
 }
