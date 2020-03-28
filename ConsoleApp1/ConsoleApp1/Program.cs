@@ -7,27 +7,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int n =int.Parse(Console.ReadLine());
-            if (n == 1)
+            string n = Console.ReadLine();
+            int m = 0;
+            foreach (char c in n)
             {
-                Console.WriteLine(1);
-            }
-            else
-            {
-                ulong a = 1;
-                ulong b = 1;
-                ulong S = 2;
-                for (int i = 0; i < n - 2; i++)
+                if ((c ==' ')||(c =='\t'))
                 {
-
-                    ulong c = a + b;
-                    a = b;
-                    b = c;
-                    S = c + S;
-                }
-                Console.WriteLine(S);
+                    m++;
+                } 
             }
-
+            Console.WriteLine(m);
+                       
         }
     }
 }
