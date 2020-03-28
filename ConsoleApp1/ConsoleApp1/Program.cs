@@ -8,16 +8,18 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string n = Console.ReadLine();
-            int m = 0;
             foreach (char c in n)
             {
-                if ((c ==' ')||(c =='\t'))
+                if(c == '\t')
                 {
-                    m++;
-                } 
+                    Console.Write("\\t");
+                }
+                else
+                {
+                    Console.Write(c);
+                }
             }
-            Console.WriteLine(m);
                        
         }
     }
-}
+}                              
